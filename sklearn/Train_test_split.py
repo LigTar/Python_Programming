@@ -1,14 +1,16 @@
 #!/usr/bin/python3
 # -*-coding:utf-8 -*-
 # @Time    : 2019/11/6 15:22
-# @Author  : XIAO FU
-# @File    : module_selection.py
+# @Author  :
+# @File    : Train_test_split.py
 
 import numpy as np
 from math import ceil
 
 
-# this code split the dataset into train set and test set before model buliding
+""" this code split the dataset into train set and test set before model buliding, 
+    meanwhile, returns the spcific index in addition to train and test set.
+"""
 
 def train_test_split(X, y, test_radio=0.2, seed= None):
     assert X.shape[0] == y.shape[0], 'X y 的行数要一样'
