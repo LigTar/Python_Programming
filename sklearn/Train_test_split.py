@@ -7,6 +7,9 @@
 import numpy as np
 from math import ceil
 
+
+# this code split the dataset into train set and test set before model buliding
+
 def train_test_split(X, y, test_radio=0.2, seed= None):
     assert X.shape[0] == y.shape[0], 'X y 的行数要一样'
     if seed:
