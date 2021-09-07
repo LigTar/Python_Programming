@@ -6,10 +6,10 @@ import re
 from newData0918 import process_data
 
 
+# this code converts the 'smi' file of the compound to 'SDF' format
 
-
-file_object = open("PHD1_IC50.smi")
-w = Chem.SDWriter("PHD1_IC50.sdf")
+file_object = open("——.smi")
+w = Chem.SDWriter("——.sdf")
 for line in file_object.readlines():
     [smi, id] = line.split()
     m = Chem.MolFromSmiles(smi)
